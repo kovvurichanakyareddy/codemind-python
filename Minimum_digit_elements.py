@@ -1,17 +1,6 @@
 n=int(input())
-c=0
-t=9999
-l=list(map(str,input().strip().split()))
-for i in range(n):
-    s=len(l[i])
-    if int(l[i])<0:
-        s-=1
-    if(s<t):
-        t=s
-for i in range(n):
-    s=len(l[i])
-    if int(l[i])<0:
-        s-=1
-    if s==t:
-        c+=1
-print(c)
+a1=list(map(str,input().split()))
+a2=[]
+for i in range(0,n):
+    a2.append(len(a1[i]))
+print(a2.count(min(a2)))
