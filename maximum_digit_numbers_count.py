@@ -1,15 +1,8 @@
 n=int(input())
-t=0
-l=list(map(str,input().strip().split()))
+a1=list(map(str,input().split()))
+a2=[]
+for i in range(0,n):
+    a2.append(len(a1[i]))
 for i in range(n):
-    s=len(l[i])
-    if int(l[i])<0:
-        s-=1
-    if(s>t):
-        t=s
-for i in range(n):
-    s=len(l[i])
-    if int(l[i])<0:
-        s-=1
-    if s==t:
-        print(int(l[i]),end=' ')
+    if a2[i]==max(a2):
+        print(a1[i],end=' ')
