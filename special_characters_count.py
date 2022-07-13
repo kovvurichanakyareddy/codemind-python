@@ -1,7 +1,6 @@
 s=input()
-su=0
-for c in s:
-    if(c.isupper() or c.islower() or c.isdigit() or c==' '):
-        continue
-    su+=1
-print(su)
+c=0
+for ch in s:
+    if  not(ch.isalpha() or ch.isdigit() or ch==' '):
+        c+=1
+print(c)
