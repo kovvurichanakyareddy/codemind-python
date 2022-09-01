@@ -1,8 +1,8 @@
 s=input()
 s=s.lower()
-arr=[]
+l=[]
 for ch in s:
-    if ch not in arr:
-        if ch.isalpha():
-            arr.append(ch)
-print(len(arr))
+    if ch.isalpha():
+        if ch not in l:
+            l.append(ch)
+print(len(l))
