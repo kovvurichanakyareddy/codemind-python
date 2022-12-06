@@ -1,11 +1,13 @@
-s=input()
-s=s.lower()
+n=input()
+n=n.lower()
 l=[]
-arr=[]
-for ch in s:
-    if ch.isalpha():
-        l.append(ch)
+ll=[]
+for i in n:
+    if i not in l:
+        if i!=" ":
+            l.append(i)
 for i in l:
-    if l.count(i)==1:
-        arr.append(i)
-print(len(arr))
+    c=n.count(i)
+    if c==1:
+        ll.append(i)
+print(len(ll))
